@@ -18,7 +18,23 @@ import junit.framework.TestSuite;
  */
 public class AppTest extends TestCase{
 
-    public void testApp(){
-    	
+    public void testPrimerArchivoMedia(){
+    	String [] ruta = {"src/test/resources/Archivo de prueba1.txt"};
+    	Charset caracter = Charset.forName("UTF-8");
+		Path archivo = Paths.get(ruta[0]);
+		MyLinkedList Linked = new MyLinkedList();
+		try (BufferedReader lector = Files.newBufferedReader(archivo, caracter)) {
+            String linea = null;
+            while ((linea = lector.readLine()) != null) {
+            	
+                double Numero = Double.parseDouble(linea);;
+                Linked.Agregar(Numero);
+            }
+
+        } catch (IOException x) {
+            System.err.format("IOException: %s%n", x);
+        }
+		Operaciones media = new Operaciones();
+        assertTrue( media.OpMedia(Linked)==550.6);
     }
 }
