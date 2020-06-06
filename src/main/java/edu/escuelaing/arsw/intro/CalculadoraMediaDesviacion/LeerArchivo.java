@@ -14,10 +14,9 @@ public class LeerArchivo {
 	
 	/**
 	 * El metodo leerCarp es el encargado de leer todos los archivos de una carpeta
-	 * ya que si se desea se puede y pasarlos a realizar el conteo de lineas
 	 * 
 	 * @param direccion es la ruta para la carpeta que se va a leer
-	 * @param cont es el contador que llevara la suma de la cantidad de lineas de los archivos
+	 * @param operacion es el tipo de operacion que se realizara a los archivos que se lean
 	 **/
 	public  void leerCarp(String direccion,Operaciones operacion) {
 
@@ -47,16 +46,24 @@ public class LeerArchivo {
 		
 	}
 	
+	/**
+	 * El metodo Casteo sera el encargado de leer como cadena los datos del archivo y convertirlos en numeros de tipo Double
+	 * 
+	 * @param numero es la cadena que entrara para convertirla en un Double
+	 * 
+	 * @return double numero de tipo Double
+	 **/
+	
 	public double Casteo (String numero) {
 		double NuevoNumero = Double.parseDouble(numero);
 		return NuevoNumero;
 	}
 	
 	/**
-	 * El metodo leerArch es el encargado de leer el archivo para hacer el conteo de lineas
+	 * El metodo leerArch es el encargado de leer el archivo para tomar la media y desviacion estandar
 	 * 
 	 * @param RutaAcceso es la ruta para el archivo que se va a leer
-	 * @param cont es el contador que llevara la suma de la cantidad de lineas del archivo
+	 * @param operacion es el tipo de operacion que se realizara a los archivos que se lean
 	 **/
 	public  void leerArch(String RutaAcceso,Operaciones operacion) {
 		Charset caracter = Charset.forName("UTF-8");
