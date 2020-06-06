@@ -22,7 +22,7 @@ public class AppTest extends TestCase{
 	 * Prueba encargada de confirmar que la media del archivo 1 esta bien calculada.
 	 */
     public void testPrimerArchivoMedia(){
-    	String [] ruta = {"src/test/resources/Archivo de prueba1.txt"};
+    	String [] ruta = {"src/test/resources/ArchivoPrueba1.txt"};
     	Charset caracter = Charset.forName("UTF-8");
 		Path archivo = Paths.get(ruta[0]);
 		MyLinkedList Linked = new MyLinkedList();
@@ -45,7 +45,7 @@ public class AppTest extends TestCase{
      * Prueba encargada de confirmar que la desviacion estandar del archivo 1 esta bien calculada.
      */
     public void testPrimerArchivoDesviacion(){
-    	String [] ruta = {"src/test/resources/Archivo de prueba1.txt"};
+    	String [] ruta = {"src/test/resources/ArchivoPrueba1.txt"};
     	Charset caracter = Charset.forName("UTF-8");
 		Path archivo = Paths.get(ruta[0]);
 		MyLinkedList Linked = new MyLinkedList();
@@ -68,7 +68,7 @@ public class AppTest extends TestCase{
      * Prueba encargada de confirmar que la media del archivo 2 esta bien calculada.
      */
     public void testSegundoArchivoMedia(){
-    	String [] ruta = {"src/test/resources/Archivo de prueba2.txt"};
+    	String [] ruta = {"src/test/resources/ArchivoPrueba2.txt"};
     	Charset caracter = Charset.forName("UTF-8");
 		Path archivo = Paths.get(ruta[0]);
 		MyLinkedList Linked = new MyLinkedList();
@@ -91,7 +91,7 @@ public class AppTest extends TestCase{
      * Prueba encargada de confirmar que la desviacion estandar del archivo 2 esta bien calculada.
      */
     public void testSegundoArchivoDesviacion(){
-    	String [] ruta = {"src/test/resources/Archivo de prueba2.txt"};
+    	String [] ruta = {"src/test/resources/ArchivoPrueba2.txt"};
     	Charset caracter = Charset.forName("UTF-8");
 		Path archivo = Paths.get(ruta[0]);
 		MyLinkedList Linked = new MyLinkedList();
@@ -114,7 +114,7 @@ public class AppTest extends TestCase{
      * Prueba encargada de confirmar que la media del archivo 3 esta bien calculada.
      */
     public void testTercerArchivoMedia(){
-    	String [] ruta = {"src/test/resources/Archivo de prueba3.txt"};
+    	String [] ruta = {"src/test/resources/ArchivoPrueba3.txt"};
     	Charset caracter = Charset.forName("UTF-8");
 		Path archivo = Paths.get(ruta[0]);
 		MyLinkedList Linked = new MyLinkedList();
@@ -137,7 +137,7 @@ public class AppTest extends TestCase{
      * Prueba encargada de confirmar que la desviacion estandar del archivo 3 esta bien calculada.
      */
     public void testTercerPrimerArchivoDesviacion(){
-    	String [] ruta = {"src/test/resources/Archivo de prueba3.txt"};
+    	String [] ruta = {"src/test/resources/ArchivoPrueba3.txt"};
     	Charset caracter = Charset.forName("UTF-8");
 		Path archivo = Paths.get(ruta[0]);
 		MyLinkedList Linked = new MyLinkedList();
@@ -160,7 +160,7 @@ public class AppTest extends TestCase{
      * Prueba encargada de confirmar que la media del archivo 4 esta bien calculada.
      */
     public void testCuartoArchivoMedia(){
-    	String [] ruta = {"src/test/resources/Archivo de prueba4.txt"};
+    	String [] ruta = {"src/test/resources/ArchivoPrueba4.txt"};
     	Charset caracter = Charset.forName("UTF-8");
 		Path archivo = Paths.get(ruta[0]);
 		MyLinkedList Linked = new MyLinkedList();
@@ -183,7 +183,7 @@ public class AppTest extends TestCase{
      * Prueba encargada de confirmar que la desviacion estandar del archivo 4 esta bien calculada.
      */
     public void testCuartoArchivoDesviacion(){
-    	String [] ruta = {"src/test/resources/Archivo de prueba4.txt"};
+    	String [] ruta = {"src/test/resources/ArchivoPrueba4.txt"};
     	Charset caracter = Charset.forName("UTF-8");
 		Path archivo = Paths.get(ruta[0]);
 		MyLinkedList Linked = new MyLinkedList();
