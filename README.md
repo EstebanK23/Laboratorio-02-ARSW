@@ -26,7 +26,7 @@ Por ultimo deberas descargar GIT para poder obtener el proyecto desde este repos
 
 [Toca acá para ver la Descarga e instalación de GIT](https://www.youtube.com/watch?v=ES2xtLyI-B8)
 
-Esto es todo lo que tienes que realizar para probar LOC Couting en tu ordenador.
+Esto es todo lo que tienes que realizar para probar Media y Desviación estandar con MyLinkedList en tu ordenador.
 
 ## Licencia
 
@@ -48,7 +48,7 @@ Las clases para leer,crear el LinkedList y calcular pertenecen al paquete edu.es
 
 Lo primero que deberas hacer es abrir la terminal de tu ordenador (CMD) y obtener el proyecto que se encuenta en el siguiente enlace:
 
-[Repositorio LOC Couting](https://github.com/EstebanK23/Laboratorio-02-ARSW)
+[Repositorio Media y Desviación estandar con MyLinkedList](https://github.com/EstebanK23/Laboratorio-02-ARSW)
 
 Para obtener el proyecto deberas clonarlo desde git, el cual ya debe estar instalado como se menciono anteriormente, para esto se usara el siguiente comando en la terminal.
 
