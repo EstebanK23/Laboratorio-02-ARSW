@@ -1,6 +1,7 @@
 package edu.escuelaing.arsw.intro;
 
 import edu.escuelaing.arsw.intro.CalculadoraMediaDesviacion.LeerArchivo;
+import edu.escuelaing.arsw.intro.CalculadoraMediaDesviacion.Operaciones;
 
 public class App {
 	
@@ -18,7 +19,8 @@ public class App {
 	public static void main( String[] args ){
 		String ruta = args[0];
         LeerArchivo archivo= new LeerArchivo();  
-        archivo.leerCarp(ruta);
+        Operaciones operacion = new Operaciones();
+        archivo.leerCarp(ruta,operacion);
            
     }
 	

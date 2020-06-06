@@ -6,8 +6,6 @@ import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.ArrayList;
-import java.util.Collections;
 import java.io.File;
 
 public class LeerArchivo {
@@ -21,7 +19,7 @@ public class LeerArchivo {
 	 * @param direccion es la ruta para la carpeta que se va a leer
 	 * @param cont es el contador que llevara la suma de la cantidad de lineas de los archivos
 	 **/
-	public  void leerCarp(String direccion) {
+	public  void leerCarp(String direccion,Operaciones operacion) {
 
 
 		File carpeta = new File(direccion);
@@ -35,16 +33,16 @@ public class LeerArchivo {
 			    for (int i=0; i< Lista.length; i++) {
 			    	System.out.println(Lista[i].getName());
 			        if (Lista[i].isDirectory()) {
-			        	leerCarp(direccion+'/'+Lista[i].getName());
+			        	leerCarp(direccion+'/'+Lista[i].getName(),operacion);
 			        }
 			        else {
-			        	leerArch(direccion+'/'+Lista[i].getName());
+			        	leerArch(direccion+'/'+Lista[i].getName(),operacion);
 			        }
 			    }
 			}
 		}
 		else {
-			leerArch(direccion);
+			leerArch(direccion,operacion);
 		}
 		
 	}
@@ -60,7 +58,7 @@ public class LeerArchivo {
 	 * @param RutaAcceso es la ruta para el archivo que se va a leer
 	 * @param cont es el contador que llevara la suma de la cantidad de lineas del archivo
 	 **/
-	public  void leerArch(String RutaAcceso) {
+	public  void leerArch(String RutaAcceso,Operaciones operacion) {
 		Charset caracter = Charset.forName("UTF-8");
 		Path archivo = Paths.get(RutaAcceso);
 		MyLinkedList Linked = new MyLinkedList();
@@ -72,7 +70,8 @@ public class LeerArchivo {
                 Linked.Agregar(Numero);
                 //System.out.println("Lei el archivo " + Numero);
             }
-
+            System.out.println("La media del archivo "+ archivo.getFileName() + " es: " + Math.round(operacion.OpMedia(Linked)*100)/100d);
+            System.out.println("La desviacion estandar del archivo "+ archivo.getFileName() + " es: " + Math.round(operacion.OpDesviacion(Linked)*100)/100d);
         } catch (IOException x) {
             System.err.format("IOException: %s%n", x);
         }
